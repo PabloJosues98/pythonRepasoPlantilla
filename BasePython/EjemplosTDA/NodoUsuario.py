@@ -4,7 +4,7 @@ class NodoUsuario:
         self.__edad = edad
         self.__genero = genero      #manejara solo H o M
 
-        self.__siguiente=None       #este es el puntero a siguiente, se inicializa como nulo, o vacio
+        self.__siguiente = None       #este es el puntero a siguiente, se inicializa como nulo, o vacio
         #Los punteros nos permiten apuntar a otro objeto de la misma clase, en este caso a otro nodo
         #En realidad guardan la direccion de memoria del objeto al que apuntan
 

@@ -5,7 +5,10 @@ from aereo import aereo
 if __name__ == '__main__':
     print('prueba')
     vehiculo1 = vehiculo('rojo', 4)         #creacion de objeto vehiculo
+    #vehiculo1.__cambiarEstado()             #No se afecta ya que el metodo es privada
+    vehiculo1.mostrarEstado()                   #si se afecta ya que la variable es publica
     vehiculo1.mostrarDatos()
+    vehiculo1.mostrarEstado()
     vehiculo1.__color='azul'        #No se afecta ya que la variables es privada
     vehiculo1.numero_asientos=5     #si se afecta ya que la variable es publica
     vehiculo1.mostrarDatos()    

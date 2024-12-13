@@ -12,8 +12,8 @@ class ListaSimple:
             self.__ultimo = nuevoNodo
         else:                                       #Si la lista no esta vacia se asigna el nodo a ultimo y se enlaza con el anterior
             #self.__ultimo.siguiente = nuevoNodo
-            self.__ultimo.setSiguiente(nuevoNodo)
-            self.__ultimo = nuevoNodo
+            self.__ultimo.setSiguiente(nuevoNodo)    #enlazar con el ultimo nodo
+            self.__ultimo = nuevoNodo               #el puntero ultimo apunta al nuevo nodo
         self.__cantidad += 1
 
     def mostrar(self):
