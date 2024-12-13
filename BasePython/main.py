@@ -39,4 +39,14 @@ if __name__ == '__main__':
     vehiculo3.set_nombre_duenio('Carlos')
     print('-----     Mostrando los datos despues de modificar las variables privadas por medio de metodos publicos')
     vehiculo3.mostrarDatos()
+
+    nombre="Jorge"
+    print("valor de nombre: "+nombre)
+    print(type(nombre))
+    nombre=3
+    print("valor de nombre: ",nombre)
+    print(type(nombre))
+    suma=2+nombre
+    print(suma)
+
     

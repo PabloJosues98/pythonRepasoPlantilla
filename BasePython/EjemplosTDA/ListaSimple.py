@@ -14,7 +14,21 @@ class ListaSimple:
             #self.__ultimo.siguiente = nuevoNodo
             self.__ultimo.setSiguiente(nuevoNodo)    #enlazar con el ultimo nodo
             self.__ultimo = nuevoNodo               #el puntero ultimo apunta al nuevo nodo
+            '''nodoActual = self.__primero
+            while nodoActual != None:
+                if nodoActual.getSiguiente() == None:
+                    self.__ultimo.setSiguiente(nuevoNodo)
+                    self.__ultimo = nuevoNodo
+                nodoActual = nodoActual.getSiguiente()'''
         self.__cantidad += 1
+
+    '''def cantidadNodos(self):
+        nodoActual = self.__primero
+        cantidad = 0
+        while nodoActual != None:
+            cantidad += 1
+            nodoActual = nodoActual.getSiguiente()
+        return cantidad'''
 
     def mostrar(self):
         nodoActual = self.__primero             #se crea un nodo actual que apunta al primero
@@ -25,7 +39,7 @@ class ListaSimple:
     def buscar(self, nombre):
         nodoActual = self.__primero
         while nodoActual != None:
-            if nodoActual.getNombre == nombre:
+            if nodoActual.getNombre() == nombre:
                 #nodoActual.mostrarDatos()
                 return True
             nodoActual = nodoActual.getSiguiente()
