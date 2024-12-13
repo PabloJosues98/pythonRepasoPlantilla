@@ -1,0 +1,36 @@
+secuencia de factorial de 5
+1*2*3*4*5=120
+1*1=1
+1*2=2
+2*3=6
+6*4=24
+24*5=120
+pila de ejecucion
+
+fac(0)
+fac(1)
+fac(2)
+fac(3)
+fac(4)
+fac(5)
+
+desapilado de ejecucion
+
+fac(0)=1	return 1
+fac(1)=1	return n*factorial(n-1)
+fac(2)=2	return n*factorial(n-1)
+fac(3)=6	return n*factorial(n-1)
+fac(4)=24	return n*factorial(n-1)
+fac(5)=120	return n*factorial(n-1)
+
+secuencia de fibonacci de 8
+
+0+1=1
+1+1=2
+1+2=3
+2+3=5
+3+5=8
+5+8=13
+8+13=21
+
+
